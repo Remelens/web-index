@@ -109,6 +109,22 @@ input,textarea{
         max-width: 328px;
     }
 }
+@media screen and (max-width:370px) {
+    .searchinput{
+        width:250px;
+    }
+    .body{
+        max-width: 278px;
+    }
+}
+@media screen and (max-width:320px) {
+    .searchinput{
+        width:225px;
+    }
+    .body{
+        max-width: 253px;
+    }
+}
 .searchinput:hover{
     backdrop-filter: blur(3.25px);
     -webkit-backdrop-filter: blur(3.25px);
