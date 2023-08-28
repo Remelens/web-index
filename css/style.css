@@ -20,8 +20,6 @@
 html{
     width:100%;
     height:100%;
-    background:white;
-    color:var(--text-color-underimg);
 }
 @media (max-width: 1120px){
     body:before {
@@ -36,7 +34,7 @@ html{
         width:100%;
         z-index: -1;
     }
-    }
+}
 body{
     margin:0;
     width:100%;
@@ -48,6 +46,7 @@ body{
     background-size: cover;
     font-family:var(--fonts);
     font-size:var(--font-size);
+    color:var(--text-color-underimg);
 }
 .centerbox{
     position: absolute;
@@ -93,7 +92,7 @@ input,textarea{
 }
 .searchinput{
     backdrop-filter: blur(2.5px);
-    -webkitbackdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     background:transparent;
     border:1px solid #7777;
     box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
