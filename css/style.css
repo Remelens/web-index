@@ -1,0 +1,160 @@
+:root{
+    --background-img:url(https://api.remelens.link/bingimg.php);
+    /*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),*/
+    --background-color:#fff;
+    --text-color:#000;
+    --text-color-underimg:#fff;
+    --link-color:#0e90d2;
+    --link-hover-color:#0056b3;
+    --cursr-color:#777;
+    --fonts:'Ubuntu Mono',Consolas,Menlo,"Microsoft Yahei UI","Pingfang SC","Noto Sans CJK SC";
+    --font-size:16px;
+    --background-text-shadow:0 2px 4px rgba(0,0,0,.5);
+}
+@media (prefers-color-scheme: dark){
+
+}
+html{
+    width:100%;
+    height:100%;
+    background:white;
+    color:var(--text-color-underimg);
+}
+@media (max-width: 1120px){
+    body:before {
+        content: "";
+        background: var(--background-img) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height:100%;
+        width:100%;
+        z-index: -1;
+    }
+    }
+body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background-image: var(--background-img);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    font-family:var(--fonts);
+    font-size:var(--font-size);
+}
+.centerbox{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    display:flex;
+}
+.body{
+    margin:auto;
+    border-radius: 7px;
+    padding:1em;
+}
+.centerbox .body{
+    text-align:center;
+    text-align:-webkit-center;
+    text-align:-moz-center;
+}
+.stitle{
+    padding-bottom:1em;
+    text-shadow:var(--background-text-shadow);
+}
+a{
+    color:var(--link-color);
+    transition:all 0.2s;
+    text-decoration: none;
+}
+a:hover{
+    color:var(--link-hover-color);
+    transition:all 0.2s;
+}
+input,button,textarea{
+    outline:none;
+    -webkit-appearance: none;
+    font-size:var(--font-size);
+}
+input,textarea{
+    caret-color:var(--cursr-color);
+    color:var(--text-color-underimg);
+}
+.searchinput{
+    backdrop-filter: blur(2.5px);
+    background:transparent;
+    border:1px solid #7777;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.5);
+    border-radius: 5em;
+    width:500px;
+    transition:all 0.2s;
+    padding:13px;
+}
+@media screen and (max-width:570px) {
+    .searchinput{
+        width:300px;
+    }
+    .body{
+        max-width: 328px;
+    }
+}
+.searchinput:hover{
+    backdrop-filter: blur(3.25px);
+    transition:all 0.2s;
+}
+.searchinput:focus/*-within*/{
+    backdrop-filter: blur(5px);
+    transition:all 0.2s;
+}
+.btnsearch{
+    background:var(--background-color);
+    color:var(--text-color);
+    border:none;
+    border-radius: 1em;
+    padding:5px 15px;
+    box-shadow: 0 3px 13px 2px rgba(0,0,0,.5);
+    margin:10px 3px;
+    display:inline-block;
+    user-select: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+h1,h2{
+    font-weight:400;
+}
+.siteinfo{
+    position: absolute;
+    padding:13px 17px;
+    display: flex;
+    align-items: center;
+}
+.title{
+    text-shadow:var(--background-text-shadow);
+    display: inline-flex;
+    align-items: center;
+    font-size:130%;
+}
+.title::before{
+    content:"";
+    background:url(https://cdn.luogu.com.cn/upload/image_hosting/wzzqwiik.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:30px;
+    width:30px;
+    border-radius: 100%;
+    margin-right:10px;
+    display:inline-block;
+}
+.sol{
+    position: absolute;
+    top:100%;
+}
