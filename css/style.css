@@ -1,5 +1,5 @@
 :root{
-    --background-img:url(https://api.remelens.link/bingimg.php);
+    --background-img:url(https://api.remelens.me/bingimg.php);
     --background-color:#fff;
     --text-color:#000;
     --text-color-underimg:#fff;
@@ -12,7 +12,7 @@
 }
 @media (prefers-color-scheme: dark){
     :root{
-        --background-img:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://api.remelens.link/bingimg.php);
+        --background-img:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://api.remelens.me/bingimg.php);
         --text-color:#fff;
         --background-color:#444;
     }
